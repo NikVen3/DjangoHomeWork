@@ -18,8 +18,15 @@ from django.contrib import admin
 from django.urls import path, include
 from myapp4.views import upload_image
 
+from django.urls import path, include
+
 
 urlpatterns = [
+
+
     path('admin/', admin.site.urls),
+    # path('', include('myapp4.urls')),
+    path('__debug__/', include("debug_toolbar.urls")),
+
 
 ]

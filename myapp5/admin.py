@@ -1,7 +1,9 @@
 from django.contrib import admin
 from .import models
 
-
+# admin.site.register(Client)
+# admin.site.register(Product)
+# admin.site.register(Order)
 @admin.action(description="Сбросить количество в ноль")
 def reset_quantity(modeladmin, request, queryset):
     queryset.update(amount=0)
