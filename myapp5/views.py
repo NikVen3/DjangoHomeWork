@@ -51,8 +51,3 @@ def upload_image(request):
     else:
         form = ImageForm()
     return render(request, 'upload_image.html', {'form': form})
-
-
-
-
-

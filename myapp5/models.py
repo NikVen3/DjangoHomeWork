@@ -27,5 +27,3 @@ class Order(models.Model):
     products = models.ManyToManyField(Product)
     common_price = models.DecimalField(max_digits=10, decimal_places=2, validators=[validate_not_negative])
     date = models.DateField()
-
-
